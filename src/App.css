@@ -28,6 +28,12 @@
 }
 
 
+.button:hover{
+  background: #fff;
+  cursor: pointer;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+}
   
 
   
