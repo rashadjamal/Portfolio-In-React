@@ -3,6 +3,7 @@ import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { themeContext } from "../../Context";
 const Contact = () => {
+ 
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const form = useRef();
@@ -10,13 +11,12 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+
+
+
+    emailjs.sendForm('service_aqd4qwe', 'template_isirkv8', form.current, 'w3Y9Vcu6D9wquLDK_')
     emailjs
-      .sendForm(
-        "service_2mu5xtl",
-        "template_m5udu2c",
-        form.current,
-        "VLwg1ltOWvnCYAiK_"
-      )
+     
       .then(
         (result) => {
           console.log(result.text);
