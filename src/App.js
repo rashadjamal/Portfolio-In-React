@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar/Navbar";
+<<<<<<< HEAD
 import Intro from "./components/Intro/Intro";
 import Services from "./components/Services/Services";
 import "./App.css";
@@ -30,6 +31,26 @@ function App() {
       <Testimonial />
       <Contact />
       <Footer />
+=======
+import './App.css';
+import Intro from "./components/Intro/Intro";
+import Services from "./components/Services/Services";
+import { Experience } from "./components/Experience/Experience";
+import Works from "./components/Works/Works";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Testimonials from "./components/Testimmonials/Testimonials";
+function App() {
+  return (
+    <div className="App">
+    
+    <Navbar/>
+    <Intro/>
+    <Services/>
+    <Experience/>
+    <Works/>
+    <Portfolio/>
+    <Testimonials/>
+>>>>>>> origin/main
     </div>
   );
 }
